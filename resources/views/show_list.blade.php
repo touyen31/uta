@@ -28,7 +28,7 @@
             <tbody>
             <tr>
                 <td><a class="list-menu-link" href="{{URL::to('/employee_list')}}">👫 Danh sách nhân viên</a></td>
-                <td><a class="list-menu-link" href="">📱 Danh sách điện thoại còn trong kho</a></td>
+                <td><a class="list-menu-link" href="{{URL::to('/product_list')}}">📱 Danh sách điện thoại còn trong kho</a></td>
             </tr>
             <tr>
                 <td><a class="list-menu-link" href="">📲 Danh sách điện thoại đã bán</a></td>

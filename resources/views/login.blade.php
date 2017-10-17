@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Login form:</h2>
+    <h2 style="margin-left: 280px">Login form:</h2>
 
     @if(Session::has('error'))
         <div class="row">
@@ -14,12 +14,12 @@
         </div>
     @endif
 
-    <form action="login_check" method="post">
+    <form action="login_check" method="post" style="margin-left: 280px">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
 
         <div class="form-group ">
             <label for="email">Email:</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" >
+            <input style="width: 500px"type="email" name="email" class="form-control" id="email" placeholder="Enter email" >
             <div style="color: red">
             @if($errors->has('email'))<p>{{$errors->first('email')}}</p>@endif
             </div>
@@ -27,7 +27,7 @@
 
         <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password" >
+            <input style="width: 500px"type="password" name="password" class="form-control" id="pwd" placeholder="Enter password" >
             <div style="color: red">
             @if($errors->has('password'))<p>{{$errors->first('password')}}</p>@endif
             </div>
