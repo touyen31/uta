@@ -17,6 +17,8 @@
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/product.js"></script>
 
     <div class="content_container">
 <div style="margin-top: -2em">
