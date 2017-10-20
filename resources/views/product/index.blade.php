@@ -48,6 +48,9 @@
     		</div>
     		<div class="product-Tools">
     			<div class="edit-tool">
+                <a href="/product/view/{{$key->id}}">View</a>
+                </div>
+                <div class="edit-tool">
     			<a href="/product/edit/{{$key->id}}">Edit</a>
     			</div>
     			<div class="delete-item">Delete</div>

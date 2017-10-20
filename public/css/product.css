@@ -81,7 +81,7 @@
 	display: flex;
 }
 .product-Tools div{
-	width: 50%;
+    width: 33%;
 	border:0px;
 }
 .product-Tools .delete-item{
