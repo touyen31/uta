@@ -17,7 +17,31 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $data = Product::all();
+        return view('product/index',compact('data'));
+        
+    }
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $data = Product::find($id);
+        return view('product/edit',compact('data'));
+    }
+        /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function view($id)
+    {
+        $data = Product::find($id);
+        return view('product/view',compact('data'));
     }
 
     /**
@@ -27,9 +51,7 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        // $data = new Product;
-        // $data = formstore(Input);
-
+        return view('product/create');
 
     }
 
@@ -59,9 +81,9 @@ class ProductController extends Controller
         $data->MoTa=Input::get('MoTa');
 
         if($data->save()){
-            return "added";
+            return $data->id;
         }else{
-            return "error";
+            return "false";
         }
     }
 
@@ -87,16 +109,7 @@ class ProductController extends Controller
     }
     
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
@@ -127,9 +140,9 @@ class ProductController extends Controller
         // $data = $request.body;
         // $id = Input::get
         if($data->save()){
-            return "edited";
+            return "true";
         }else{
-            return "error";
+            return "false";
         }
     }
 
@@ -143,9 +156,9 @@ class ProductController extends Controller
     {
         $data = Product::find(Input::get('id'));
         if($data->delete()){
-            return "delete";
+            return "true";
         }else{
-            return "error";
+            return "false";
         }
     }
 }

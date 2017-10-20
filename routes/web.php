@@ -57,6 +57,17 @@ Route::post('edit/{id}', 'EmployeeController@Action');
 Route::post('/Delete/{id}', 'EmployeeController@Delete');
 
 
+//PRODUCT ROUTES
+Route::group(['prefix' => 'product', 'middleware' => 'auth:web'], function () {
+        	Route::get('/', 'ProductController@index');
+            Route::get('/create', 'ProductController@create');
+            Route::get('/edit/{id}', 'ProductController@edit');
+        	Route::get('/view/{id}', 'ProductController@view');
+    });
+
+
+
+
 
 //API ROUTES
 Route::group(['prefix' => 'api', 'middleware' => 'auth:web'], function () {
