@@ -18,31 +18,31 @@
 			<div class="edit-title-detail">
 				Mã điện thoại
 			</div>    	
-    		<input type="text" value="" name="" class="edit-MaDienThoai">
+    		<input type="text" value="" name="" class="edit-MaDienThoai" placeholder="required" required>
     	</div>
     	<div class="form-edit">
 			<div class="edit-title-detail">
 				Tên điện thoại
 			</div>    	
-    		<input type="text" value="" name="" class="edit-TenDienThoai">
+    		<input type="text" value="" name="" class="edit-TenDienThoai" placeholder="required" required>
     	</div>
     	<div class="form-edit">
 			<div class="edit-title-detail">
 				Hãng sản xuất
 			</div>    	
-    		<input type="text" value="" name="" class="edit-HangSX">
+    		<input type="text" value="" name="" class="edit-HangSX" placeholder="required" required>
     	</div>
     	<div class="form-edit">
 			<div class="edit-title-detail">
 				Số lượng
 			</div>    	
-    		<input type="text" value="" name="" class="edit-SoLuongConLai">
+    		<input type="text" value="" name="" class="edit-SoLuongConLai" placeholder="required" required>
     	</div>
     	<div class="form-edit">
 			<div class="edit-title-detail">
 				Giá bán
 			</div>    	
-    		<input type="text" value="" name="" class="edit-GiaBan">
+    		<input type="text" value="" name="" class="edit-GiaBan" placeholder="required" required>
     	</div>
     	<div class="form-edit">
 			<div class="edit-title-detail">

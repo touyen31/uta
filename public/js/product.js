@@ -1,24 +1,8 @@
 $(document).ready(function() {
-    var data = {
-        MaDienThoai: "Note2",
-        TenDienThoai: "Note 2",
-        HangSX: "Samsung",
-        SoLuongConLai: 22,
-        GiaBan: 12000000,
-        ManHinh: 5,
-        HeDieuHanh: "Android 8",
-        CameraTruoc: "12MP",
-        CameraSau: "12MP",
-        RAM: 4048,
-        ROM: 32,
-        CPU: "835",
-        Pin: "3000",
-        Khac: "hihi",
-        MoTa: "Samsung phone"
-    };
     delete_product();
     edit_product();
     create_product();
+    $($("input")[0]).focus();
 })
 
 var delete_product = function() {
